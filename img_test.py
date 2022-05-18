@@ -3,7 +3,7 @@ import hashlib
 import shutil
 
 path =input("Please enter your path")
-unique_floder_path = input("Enter unique folder path: ")
+unique_folder_path = input("Enter unique folder path: ")
 duplicate_folder_path = input("Enter path of duplicate folder: ")
 accepted_files = ["jpg","png","jpeg"]
 img_dict = {}
@@ -29,7 +29,7 @@ for file in os.listdir(path):
         img_dict[file] = sha256sum(file)
         if img_dict[file] not in images_hex:
             original = r'{}\{}'.format(path,file) 
-            target = r'{}'.format(unique_floder_path)
+            target = r'{}'.format(unique_folder_path)
             shutil.move(original,target) 
             Unique_images.append(path + "/" + file)
             images_hex.append(img_dict[file])
