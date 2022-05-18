@@ -9,6 +9,6 @@ I have developed the code in which, the images are accessed from a folder and al
 2. Path of Unique images folder (To store all the unique images)
 3. Path of Duplicate images folder( To store all the duplicate images)
 
-**Output**
+**Output:**
 All the Unique images are stored in the unique images folder you have created and the duplicates are transferred to Duplicate images folder.  
 
